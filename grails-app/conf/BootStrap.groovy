@@ -5,7 +5,7 @@ import biblioj.TypeDocument
 class BootStrap {
 
     def init = { servletContext ->
-		TypeDocument nouveaute = new TypeDocument (intitule : "Nouveauté")
+TypeDocument nouveaute = new TypeDocument (intitule : "Nouveauté")
 		nouveaute.save()
 		Auteur vigian = new Auteur(nom : "Vigian", prenom : "Delphine de")
 		vigian.save()
@@ -13,8 +13,6 @@ class BootStrap {
 										nombreExemplairesDisponibles: 2, type: nouveaute, auteur : vigian)
 		livre1.save()
 		vigian.addToLivres(livre1)
-		
-		
     }
     def destroy = {
     }
