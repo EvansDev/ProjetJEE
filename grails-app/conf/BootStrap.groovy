@@ -14,6 +14,7 @@ class BootStrap {
 		livre1.save()
 		vigian.addToLivres(livre1)
 		
+		
     }
     def destroy = {
     }
