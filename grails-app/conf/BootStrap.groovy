@@ -12,7 +12,7 @@ class BootStrap {
 		Livre livre1 = new Livre (titre:"Rien ne s'oppose à la nuit : roman", nombreExemplaires : 2,
 										nombreExemplairesDisponibles: 2, type: nouveaute, auteur : vigian)
 		livre1.save()
-		Vigian.addToLivres(livre1)
+		vigian.addToLivres(livre1)
 		
     }
     def destroy = {
