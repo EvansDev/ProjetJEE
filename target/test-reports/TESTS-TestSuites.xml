@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="5" hostname="Romain-PC" id="0" name="ReservationControllerTests" package="biblioj" tests="8" time="2.813" timestamp="2014-04-17T14:39:24">
+      <properties />
+
+      <testcase classname="biblioj.ReservationControllerTests" name="testIndex" time="1.651" />
+
+      <testcase classname="biblioj.ReservationControllerTests" name="testUpdate" time="0.755">
+          <failure message="Assertion failed: &#xa;&#xa;assert reservation.save() != null&#xa;       |           |      |&#xa;       0 - null    null   false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert reservation.save() != null
+       |           |      |
+       0 - null    null   false
+
+	at biblioj.ReservationControllerTests.testUpdate(ReservationControllerTests.groovy:100)
+</failure>
+
+      </testcase>
+
+      <testcase classname="biblioj.ReservationControllerTests" name="testCreate" time="0.047" />
+
+      <testcase classname="biblioj.ReservationControllerTests" name="testSave" time="0.084">
+          <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/reservation/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@34a41&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/reservation/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@34a41
+
+	at biblioj.ReservationControllerTests.testSave(ReservationControllerTests.groovy:48)
+</failure>
+
+      </testcase>
+
+      <testcase classname="biblioj.ReservationControllerTests" name="testList" time="0.07" />
+
+      <testcase classname="biblioj.ReservationControllerTests" name="testShow" time="0.064">
+          <failure message="Assertion failed: &#xa;&#xa;assert reservation.save() != null&#xa;       |           |      |&#xa;       0 - null    null   false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert reservation.save() != null
+       |           |      |
+       0 - null    null   false
+
+	at biblioj.ReservationControllerTests.testShow(ReservationControllerTests.groovy:62)
+</failure>
+
+      </testcase>
+
+      <testcase classname="biblioj.ReservationControllerTests" name="testDelete" time="0.053">
+          <failure message="Assertion failed: &#xa;&#xa;assert reservation.save() != null&#xa;       |           |      |&#xa;       0 - null    null   false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert reservation.save() != null
+       |           |      |
+       0 - null    null   false
+
+	at biblioj.ReservationControllerTests.testDelete(ReservationControllerTests.groovy:144)
+</failure>
+
+      </testcase>
+
+      <testcase classname="biblioj.ReservationControllerTests" name="testEdit" time="0.056">
+          <failure message="Assertion failed: &#xa;&#xa;assert reservation.save() != null&#xa;       |           |      |&#xa;       0 - null    null   false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert reservation.save() != null
+       |           |      |
+       0 - null    null   false
+
+	at biblioj.ReservationControllerTests.testEdit(ReservationControllerTests.groovy:80)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testIndex--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testList--
+--Output from testShow--
+--Output from testDelete--
+--Output from testEdit--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testIndex--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testList--
+--Output from testShow--
+--Output from testDelete--
+--Output from testEdit--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
