@@ -36,6 +36,8 @@ class LivreController {
 			'in' ("type", TypeDocument.get(idType))
 		}
 		
+		
+		//result.take(params.max)
 		[livreInstanceList: result, livreInstanceTotal: result.size()]
 	}
 
