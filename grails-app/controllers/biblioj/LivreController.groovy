@@ -20,7 +20,7 @@ class LivreController {
     }
 	
 	def recherche() {
-		
+		 
 	}
 	
 	def resultat_recherche(String titre, String nom, String type) {
