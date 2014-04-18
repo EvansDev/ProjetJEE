@@ -22,6 +22,16 @@ class LivreController {
 	def recherche() {
 		[livreInstance : new Livre(params)]
 	}
+	
+	def resultat_recherche(String titre) {
+		def livreInstance = Livre.findAllByTitreLike("%"+titre+"%");
+        if (!livreInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'livre.label', default: 'Livre'), titre])
+            redirect(action: "list")
+            return
+        }
+		[livreInstanceList: livreInstance, livreInstanceTotal: livreInstance.size()]
+	}
 
     def save() {
         def livreInstance = new Livre(params)

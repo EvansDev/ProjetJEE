@@ -18,5 +18,18 @@
 			</ul>
 		</div>
 		
+		<form action="resultat_recherche" method="post">
+    		<div class="fieldcontain ${hasErrors(bean: livreInstance, field: 'titre', 'error')} required">
+				<label for="titre">
+					<g:message code="livre.titre.label" default="Titre" />
+					<span class="required-indicator">*</span>
+				</label>
+				<g:textField name="titre" required="" value="${livreInstance?.titre}"/>
+			</div>
+    		
+    		<g:submitButton name="create" class="save" value="Rechercher" />
+    
+		</form>
+		
 	</body>
 </html>
