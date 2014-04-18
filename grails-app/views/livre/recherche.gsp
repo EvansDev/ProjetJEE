@@ -19,28 +19,26 @@
 		</div>
 		
 		<form action="resultat_recherche" method="post">
-    		<div class="fieldcontain ${hasErrors(bean: livreInstance, field: 'titre', 'error')} required">
+    		<div class="fieldcontain ${hasErrors(bean: livreInstance, field: 'titre', 'error')} ">
 				<label for="titre">
 					<g:message code="livre.titre.label" default="Titre" />
-					<span class="required-indicator">*</span>
+					
 				</label>
-				<g:textField name="titre" required="" value="${livreInstance?.titre}"/>
+				<g:textField name="titre"  value="${livreInstance?.titre}"/>
 			</div>
 			
-			<div class="fieldcontain ${hasErrors(bean: auteurInstance, field: 'nom', 'error')} required">
+			<div class="fieldcontain ${hasErrors(bean: auteurInstance, field: 'nom', 'error')}">
 				<label for="titre">
 					<g:message code="auteur.nom.label" default="Nom" />
-					<span class="required-indicator">*</span>
 				</label>
-				<g:textField name="nom" required="" value="${auteurInstance?.nom}"/>
+				<g:textField name="nom" value="${auteurInstance?.nom}"/>
 			</div>
 			
-			<div class="fieldcontain ${hasErrors(bean: livreInstance, field: 'type', 'error')} required">
+			<div class="fieldcontain ${hasErrors(bean: livreInstance, field: 'type', 'error')}">
 				<label for="type">
 					<g:message code="livre.type.label" default="Type" />
-					<span class="required-indicator">*</span>
 				</label>
-				<g:select id="type" name="type.id" from="${biblioj.TypeDocument.list()}" optionKey="id" required="" value="${livreInstance?.type?.id}" class="many-to-one"/>
+				<g:select id="type" name="type.id" from="${biblioj.TypeDocument.list()}" optionKey="id" value="${livreInstance?.type?.id}" class="many-to-one"/>
 			</div>
 
     		

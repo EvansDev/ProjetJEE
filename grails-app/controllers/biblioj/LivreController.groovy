@@ -20,19 +20,12 @@ class LivreController {
     }
 	
 	def recherche() {
-		[livreInstance : new Livre(params)]
+		
 	}
 	
 	def resultat_recherche(String titre, String nom, String type) {
 		
 		def idType = Integer.parseInt(type.replaceAll("[^\\d-]", "")) // On récupère juste le numéro de l'id
-		
-		def livreInstance = Livre.findAllByTitreLike("%"+titre+"%");
-        if (!livreInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [message(code: 'livre.label', default: 'Livre'), titre])
-            redirect(action: "list")
-            return
-        }
 			
 		def c = Livre.createCriteria()
 		def result = c.listDistinct {
