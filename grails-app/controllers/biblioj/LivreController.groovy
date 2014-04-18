@@ -7,7 +7,7 @@ class LivreController {
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def index() {
-        redirect(action: "list", params: params)
+        redirect(action: "recherche", params: params)
     }
 
     def list(Integer max) {
@@ -18,6 +18,10 @@ class LivreController {
     def create() {
         [livreInstance: new Livre(params)]
     }
+	
+	def recherche() {
+		[livreInstance : new Livre(params)]
+	}
 
     def save() {
         def livreInstance = new Livre(params)
