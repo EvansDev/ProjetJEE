@@ -26,6 +26,23 @@
 				</label>
 				<g:textField name="titre" required="" value="${livreInstance?.titre}"/>
 			</div>
+			
+			<div class="fieldcontain ${hasErrors(bean: auteurInstance, field: 'nom', 'error')} required">
+				<label for="titre">
+					<g:message code="auteur.nom.label" default="Nom" />
+					<span class="required-indicator">*</span>
+				</label>
+				<g:textField name="nom" required="" value="${auteurInstance?.nom}"/>
+			</div>
+			
+			<div class="fieldcontain ${hasErrors(bean: livreInstance, field: 'type', 'error')} required">
+				<label for="type">
+					<g:message code="livre.type.label" default="Type" />
+					<span class="required-indicator">*</span>
+				</label>
+				<g:select id="type" name="type.id" from="${biblioj.TypeDocument.list()}" optionKey="id" required="" value="${livreInstance?.type?.id}" class="many-to-one"/>
+			</div>
+
     		
     		<g:submitButton name="create" class="save" value="Rechercher" />
     
