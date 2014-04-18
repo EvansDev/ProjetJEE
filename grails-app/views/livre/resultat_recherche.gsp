@@ -47,7 +47,7 @@
 					
 						<td>${fieldValue(bean: livreInstance, field: "type")}</td>
 					
-					</tr>
+					</tr>  
 				</g:each>
 				</tbody>
 			</table>
