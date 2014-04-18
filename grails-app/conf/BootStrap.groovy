@@ -27,24 +27,24 @@ class BootStrap {
 		
 		Livre livre1 = new Livre (titre:"Rien ne s'oppose à la nuit : roman", nombreExemplaires : 2,
 										nombreExemplairesDisponibles: 2, type: nouveaute, auteurs : vigian)
-		Livre livre2 = new Livre (titre:"Hunger Games", nombreExemplaire : 10,
-										nombreExemplaireDisponible: 10, type: livreAdo, auteur : collins )
-		Livre livre3 = new Livre (titre:"La couleur des sentiments", nombreExemplaire : 8,
-										nombreExemplaireDisponible: 8, type: nouveaute, auteur : stockett)
-		Livre livre4 = new Livre (titre:"L'embrasement", nombreExemplaire : 10,
-										nombreExemplaireDisponible: 10, type: livreAdo, auteur : collins)
-		Livre livre5 = new Livre (titre:"Limonov", nombreExemplaire : 5,
-										nombreExemplaireDisponible: 5, type: nouveaute, auteur : carrere)
-		Livre livre6 = new Livre (titre:"1Q84. 1. Avril-juin", nombreExemplaire : 4,
-										nombreExemplaireDisponible: 4, type: nouveaute, auteur : murakami)
-		Livre livre7 = new Livre (titre:"1Q84. 3. Octobre-décembre", nombreExemplaire : 4,
-										nombreExemplaireDisponible: 4, type: nouveaute, auteur : murakami)
-		Livre livre8 = new Livre (titre:"La révolte", nombreExemplaire : 10,
-										nombreExemplaireDisponible: 10, type: livreAdo, auteur : collins)
-		Livre livre9 = new Livre (titre:"La liste de mes envies", nombreExemplaire : 6,
-										nombreExemplaireDisponible: 6, type: livreAdulte, auteur : delacourt)
-		Livre livre10 = new Livre (titre:"1Q84. 2. Juillet-septembre", nombreExemplaire : 4,
-										nombreExemplaireDisponible: 4, type: nouveaute, auteur : murakami)
+		Livre livre2 = new Livre (titre:"Hunger Games", nombreExemplaires : 10,
+										nombreExemplairesDisponibles: 10, type: livreAdo, auteurs : collins )
+		Livre livre3 = new Livre (titre:"La couleur des sentiments", nombreExemplaires : 8,
+										nombreExemplairesDisponibles: 8, type: nouveaute, auteurs : stockett)
+		Livre livre4 = new Livre (titre:"L'embrasement", nombreExemplaires : 10,
+										nombreExemplairesDisponibles: 10, type: livreAdo, auteurs : collins)
+		Livre livre5 = new Livre (titre:"Limonov", nombreExemplaires : 5,
+										nombreExemplairesDisponibles : 5, type: nouveaute, auteurs : carrere)
+		Livre livre6 = new Livre (titre:"1Q84. 1. Avril-juin", nombreExemplaires : 4,
+										nombreExemplairesDisponibles: 4, type: nouveaute, auteurs : murakami)
+		Livre livre7 = new Livre (titre:"1Q84. 3. Octobre-décembre", nombreExemplaires : 4,
+										nombreExemplairesDisponibles: 4, type: nouveaute, auteurs : murakami)
+		Livre livre8 = new Livre (titre:"La révolte", nombreExemplaires : 10,
+										nombreExemplairesDisponibles: 10, type: livreAdo, auteurs : collins)
+		Livre livre9 = new Livre (titre:"La liste de mes envies", nombreExemplaires : 6,
+										nombreExemplairesDisponibles: 6, type: livreAdulte, auteurs : delacourt)
+		Livre livre10 = new Livre (titre:"1Q84. 2. Juillet-septembre", nombreExemplaires : 4,
+										nombreExemplairesDisponibles : 4, type: nouveaute, auteurs : murakami)
 		livre1.save()
 		livre2.save()
 		livre3.save()
