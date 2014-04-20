@@ -21,6 +21,7 @@
 			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
+			<form name="ajout" action="resultat_recherche" method="get">
 			<table>
 				<thead>
 					<tr>
@@ -32,6 +33,8 @@
 						<g:sortableColumn property="nombreExemplairesDisponibles" title="${message(code: 'livre.nombreExemplairesDisponibles.label', default: 'Nombre Exemplaires Disponibles')}" />
 					
 						<th><g:message code="livre.type.label" default="Type" /></th>
+						
+						<th><g:message code="Panier" /></th>
 					
 					</tr>
 				</thead>
@@ -47,10 +50,18 @@
 					
 						<td>${fieldValue(bean: livreInstance, field: "type")}</td>
 					
+						<td>
+								
+							<g:if test="${livreInstance.nombreExemplairesDisponibles > 0 && !session.panier.id.contains(livreInstance.id)}">	
+								<button class="save" name="idLivre" type="submit" value="${livreInstance.id}">Ajouter</button>	
+							</g:if>	
+							
+						</td>
 					</tr>  
 				</g:each>
 				</tbody>
 			</table>
+			</form>
 			<div class="pagination">
 				<g:paginate total="${livreInstanceTotal}" />
 			</div>

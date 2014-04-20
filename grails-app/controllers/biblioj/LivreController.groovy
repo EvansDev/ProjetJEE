@@ -23,7 +23,27 @@ class LivreController {
 		 
 	}
 	
-	def resultat_recherche(String titre, String nom, String type) {
+	def resultat_recherche(String titre, String nom, String type, String idLivre) {
+		if(session['panier'] == null){
+			session['panier'] = []
+	   }
+		
+		if (titre==null) {
+			titre = session['livre']
+			nom = session ['nom']
+			type = session ['type']
+		}
+		else {
+			session['livre'] = titre
+			session ['nom'] = nom
+			session ['type'] = type
+		}
+		
+		if (idLivre!=null && idLivre !=0) {
+			if (Livre.findById(idLivre).nombreExemplairesDisponibles > 0 && !session.panier.id.contains(Livre.findById(idLivre).id)){
+				session['panier'].add(Livre.findById(idLivre))
+		   }
+		}
 		
 		def idType = Integer.parseInt(type.replaceAll("[^\\d-]", "")) // On récupère juste le numéro de l'id
 			
