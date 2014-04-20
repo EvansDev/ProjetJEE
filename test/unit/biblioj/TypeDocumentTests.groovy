@@ -33,6 +33,6 @@ class TypeDocumentTests {
 	
 	@Test
 	void testMauvaisTypeVide() {
-		assertNull(mauvaisType.getIntitule())
+		assertNull(mauvaisType.getIntitule()) 
 	}
 }
