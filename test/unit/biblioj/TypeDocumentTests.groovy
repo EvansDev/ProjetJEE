@@ -10,8 +10,29 @@ import org.junit.*
  */
 @TestFor(TypeDocument)
 class TypeDocumentTests {
+	
+	TypeDocument nouveaute 
+	TypeDocument mauvaisType
 
-    void testSomething() {
-       fail "Implement me"
+	@Before
+	void setUp(){
+		nouveaute = new TypeDocument (intitule : "Nouveauté")
+		mauvaisType = new TypeDocument ()
+	}
+	
+	@After
+	void tearsDown(){
+		nouveaute = null
+		mauvaisType = null
+	}
+	
+	@Test
+    void testCreationTypeDocument() {
+       	assertEquals("Nouveauté", nouveaute.getIntitule())
     }
+	
+	@Test
+	void testMauvaisTypeVide() {
+		assertNull(mauvaisType.getIntitule())
+	}
 }
