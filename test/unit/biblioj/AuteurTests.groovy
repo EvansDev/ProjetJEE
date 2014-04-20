@@ -16,7 +16,7 @@ class AuteurTests {
 	@Before
 	public void setUp(){
 		auteur1 = new Auteur(nom : "Pierre", prenom : "Jacques")
-		auteur2 = new Auteur(nom : "Paul")
+		auteur2 = new Auteur(nom : "", prenom : "")
 	}
 	
 	@After
@@ -42,7 +42,8 @@ class AuteurTests {
 	
 	@Test 
 	void testAuteurNonValide(){
-		assertEquals(auteur2.getPrenom(), null)
+		assert auteur2 != null
+		assert auteur2.save() == null
 	}
 	
 }
