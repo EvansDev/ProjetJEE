@@ -23,7 +23,8 @@ class LivreTests {
 		vigian = new Auteur(nom : "Vigian", prenom : "Delphine de")
 		livre1 = new Livre (titre:"Rien ne s'oppose à la nuit : roman", nombreExemplaires : 2,
 			nombreExemplairesDisponibles: 2, type: nouveaute, auteurs : vigian)
-		livre2 = new Livre ()
+		livre2 = new Livre (titre:"", nombreExemplaires : 2,
+			nombreExemplairesDisponibles: 2, type: nouveaute, auteurs : vigian)
 	}
 	
 	@After
@@ -41,6 +42,7 @@ class LivreTests {
 	
 	@Test
 	void testMauvaiseCreation (){
-		assertNull (livre2.getTitre())
+		assert livre2 != null
+		assert livre2.save() == null
 	}
 }
