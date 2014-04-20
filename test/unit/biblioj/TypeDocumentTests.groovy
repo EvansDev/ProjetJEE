@@ -17,7 +17,7 @@ class TypeDocumentTests {
 	@Before
 	void setUp(){
 		nouveaute = new TypeDocument (intitule : "Nouveauté")
-		mauvaisType = new TypeDocument ()
+		mauvaisType = new TypeDocument (intitule : "")
 	}
 	
 	@After
@@ -33,6 +33,7 @@ class TypeDocumentTests {
 	
 	@Test
 	void testMauvaisTypeVide() {
-		assertNull(mauvaisType.getIntitule()) 
+		assert mauvaisType != null
+		assert mauvaisType.save() == null
 	}
 }
