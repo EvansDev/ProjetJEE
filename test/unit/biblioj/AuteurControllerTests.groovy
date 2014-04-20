@@ -11,8 +11,8 @@ class AuteurControllerTests {
 
     def populateValidParams(params) {
         assert params != null
-        // TODO: Populate valid properties like...
-        //params["name"] = 'someValidName'
+        params["nom"] = 'auteurNom'
+		params["prenom"] = 'auteurNom'
     }
 
     void testIndex() {
@@ -75,7 +75,7 @@ class AuteurControllerTests {
         assert response.redirectedUrl == '/auteur/list'
 
         populateValidParams(params)
-        def auteur = new Auteur(params)
+        def auteur = new Auteur(nom : "Test", prenom : "Toto")
 
         assert auteur.save() != null
 
@@ -101,7 +101,8 @@ class AuteurControllerTests {
 
         // test invalid parameters in update
         params.id = auteur.id
-        //TODO: add invalid values to params object
+        params["nom"] = ""
+		params["prenom"] = ""
 
         controller.update()
 
