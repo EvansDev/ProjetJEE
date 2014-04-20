@@ -20,6 +20,24 @@
 	<body>
 		<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
 		<g:layoutBody/>
+		<g:if test="${session.panier != null}">
+			<table>
+				<thead>
+					<tr>					
+						<th>Panier</th>				
+					</tr>
+				</thead>
+				<tbody>
+				<g:each in="${session.panier}" status="i" var="livrePanier">
+					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
+					
+						<td><g:link action="show" id="${livrePanier.id}">${fieldValue(bean: livrePanier, field: "titre")}</g:link></td>
+						<td>${link(action:'deletePanier', controller:'livre', params : ['targetUri': (request.forwardURI - request.contextPath), 'idLivre' : session.panier[i].getId()]) { 'Supprimer' }}</td>
+					</tr>  
+				</g:each>
+				</tbody>
+			</table>	
+		</g:if>
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
 		<g:javascript library="application"/>

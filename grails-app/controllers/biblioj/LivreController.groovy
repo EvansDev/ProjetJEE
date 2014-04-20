@@ -61,6 +61,21 @@ class LivreController {
 		[livreInstanceList: result, livreInstanceTotal: result.size()]
 	}
 
+	def deletePanier(Long idLivre) {
+		int compteur = 0;
+		if (session['panier']!=null) {
+			for ( Livre l : session['panier']) {
+				if (l.id==idLivre) {
+					session['panier'].remove(compteur);
+					break;
+				}
+				compteur++;
+			}
+		}
+		def targetUri = params.targetUri ?: "/"
+		redirect(uri: targetUri)
+	}
+	
     def save() {
         def livreInstance = new Livre(params)
         if (!livreInstance.save(flush: true)) {
