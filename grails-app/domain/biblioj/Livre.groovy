@@ -8,7 +8,7 @@ class Livre {
 	TypeDocument type // type du livre
 	static hasMany = [auteurs : Auteur , reservations : Reservation] // Un livre peut être écrit par plusieurs documents
 	//static belongsToAuteur = Auteur
-	
+	static belongsTo = Reservation
 
     static constraints = {
 		titre blank : false

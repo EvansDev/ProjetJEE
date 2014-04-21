@@ -1,5 +1,7 @@
 package biblioj
 
+import javax.servlet.SessionCookieConfig;
+
 import org.springframework.dao.DataIntegrityViolationException
 
 class ReservationController {
@@ -9,6 +11,66 @@ class ReservationController {
     def index() {
         redirect(action: "list", params: params)
     }
+	
+	
+	def reservation() {
+		
+		def compteur = 0
+		def code = 0
+		def listeReservation = []
+		def livreIndisponible = false
+		
+		
+		// Creation de la liste des livres disponibles
+		for (Livre l : session.panier) {
+			if (Livre.findById(session.panier[compteur].id).getNombreExemplairesDisponibles()>0 && Livre.findById(session.panier[compteur].id).getNombreExemplairesDisponibles()!=null) {
+				Livre livre = Livre.findById(session.panier[compteur].id)
+				livre.setNombreExemplairesDisponibles(livre.getNombreExemplairesDisponibles()-1)
+				listeReservation.add(livre)
+			}
+			else {
+				System.out.println("INDISPO")
+				livreIndisponible = true
+			}
+			compteur++
+		}
+		
+		// Création du code de réservation
+		while (code==0 || !Reservation.findAllByCode(code).isEmpty()) {
+			code = (int)(Math.random() * 1000)
+		}
+		session['code'] = code
+		
+		// On crée la reservation 
+		session['reservation'] = new Reservation(code : code, livres : listeReservation, dateReservation : new Date());
+		
+		
+		if (livreIndisponible || listeReservation.isEmpty()) {
+			
+		}
+		else {
+			session['panier']=[]
+			session['reservation'].save()
+			Calendar dateLimite = Calendar.getInstance()
+			dateLimite.setTime(new Date())
+			dateLimite.add(Calendar.HOUR, 24)
+			session['dateLimite'] = dateLimite.getTime().toString()
+		}		
+		[listeLivreDisponible : listeReservation, indisponible : livreIndisponible]
+	}
+	
+	def confirmerReservation() {
+		session['panier']=[]
+		session['reservation'].save()
+		Calendar dateLimite = Calendar.getInstance()
+		dateLimite.setTime(new Date())
+		dateLimite.add(Calendar.HOUR, 24)
+		session['dateLimite'] = dateLimite.getTime().toString()
+	}
+	
+	def annulerReservation() {
+		
+	}
 
     def list(Integer max) {
         params.max = Math.min(max ?: 10, 100)
