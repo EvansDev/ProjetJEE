@@ -17,7 +17,7 @@ class ReservationController {
 		
 		def compteur = 0
 		def code = 0
-		def listeReservation = []
+		def listeReservation = [] 
 		def livreIndisponible = false
 		
 		
