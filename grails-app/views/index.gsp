@@ -82,13 +82,11 @@
 	</head>
 	<body>
 			<div id="controller-list" role="navigation">
-				<h2>Available Controllers:</h2>
 				<ul>
-					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-						<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
-					</g:each>
+					<li><g:link action="recherche" controller="livre"><g:message code="Rechercher des livres" /></g:link></li>
+ 					<li><g:link action="list" controller="livre"><g:message code="Liste des livres" /></g:link></li>
+					<li><g:link action="list" controller="reservation"><g:message code="Vos reservations" /></g:link></li>
 				</ul>
 			</div>
-		</div>
 	</body>
 </html>
