@@ -15,6 +15,34 @@ class ReservationControllerTests {
 		params["dateReservation"] = new Date("25/04/2020")
 		
     }
+	
+	void testConfirmerReservation() {
+		params["code"] = 1
+		params["dateReservation"] = new Date("25/04/2020")
+		
+		session['reservation'] = new Reservation(code : params["code"] , dateReservation : params["dateReservation"])
+		def model = controller.confirmerReservation()
+		
+		Calendar dateLimite = Calendar.getInstance()
+		dateLimite.setTime(new Date())
+		dateLimite.add(Calendar.HOUR, 24)
+		
+		assert session['dateLimite'] == dateLimite.getTime().toString()
+		
+		assert session['panier']==[]
+	}
+	
+	void testReservation() {
+		
+		
+		TypeDocument t = new TypeDocument( intitule : "Nouveauté" )
+		Livre l = new Livre( titre : "Rien ne s'oppose à la nuit : roman", type : t , nombreExemplaires : 5, nombreExemplairesDisponibles : 5 )
+		
+		def model = controller.reservation()
+		
+		assert model.indisponible == false
+		assert session['code'] > 0 
+	}
 
     void testIndex() {
         controller.index()

@@ -1,0 +1,16 @@
+Testsuite: biblioj.LivreTests
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0,197 sec
+------------- Standard Output ---------------
+--Output from testMauvaiseCreation--
+--Output from testCreationValide--
+--Output from testToString--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testMauvaiseCreation--
+--Output from testCreationValide--
+--Output from testToString--
+------------- ---------------- ---------------
+
+Testcase: testMauvaiseCreation took 0,077 sec
+Testcase: testCreationValide took 0,009 sec
+Testcase: testToString took 0,009 sec

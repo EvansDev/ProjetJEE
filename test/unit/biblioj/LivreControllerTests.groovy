@@ -22,6 +22,12 @@ class LivreControllerTests {
         controller.index()
         assert "/livre/recherche" == response.redirectedUrl
     }
+	
+	void testDeletePanier() {
+		session['panier']=[]
+		def model = controller.deletePanier(1)
+	}
+	
 
     void testList() {
 

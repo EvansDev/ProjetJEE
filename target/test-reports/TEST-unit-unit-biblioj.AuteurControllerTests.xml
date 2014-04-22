@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Romain-PC" name="biblioj.AuteurControllerTests" tests="8" time="1.007" timestamp="2014-04-22T21:17:38">
+  <properties />
+  <testcase classname="biblioj.AuteurControllerTests" name="testList" time="0.497" />
+  <testcase classname="biblioj.AuteurControllerTests" name="testShow" time="0.153" />
+  <testcase classname="biblioj.AuteurControllerTests" name="testUpdate" time="0.102" />
+  <testcase classname="biblioj.AuteurControllerTests" name="testCreate" time="0.038" />
+  <testcase classname="biblioj.AuteurControllerTests" name="testSave" time="0.039" />
+  <testcase classname="biblioj.AuteurControllerTests" name="testDelete" time="0.041" />
+  <testcase classname="biblioj.AuteurControllerTests" name="testEdit" time="0.037" />
+  <testcase classname="biblioj.AuteurControllerTests" name="testIndex" time="0.036" />
+  <system-out><![CDATA[--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
+]]></system-out>
+  <system-err><![CDATA[--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
+]]></system-err>
+</testsuite>

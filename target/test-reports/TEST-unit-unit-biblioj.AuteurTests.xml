@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Romain-PC" name="biblioj.AuteurTests" tests="5" time="0.205" timestamp="2014-04-22T21:17:39">
+  <properties />
+  <testcase classname="biblioj.AuteurTests" name="testCreationAuteur" time="0.055" />
+  <testcase classname="biblioj.AuteurTests" name="testPrenomAuteur" time="0.008" />
+  <testcase classname="biblioj.AuteurTests" name="testAuteurNonValide" time="0.01" />
+  <testcase classname="biblioj.AuteurTests" name="testNomAuteur" time="0.008" />
+  <testcase classname="biblioj.AuteurTests" name="testToString" time="0.008" />
+  <system-out><![CDATA[--Output from testCreationAuteur--
+--Output from testPrenomAuteur--
+--Output from testAuteurNonValide--
+--Output from testNomAuteur--
+--Output from testToString--
+]]></system-out>
+  <system-err><![CDATA[--Output from testCreationAuteur--
+--Output from testPrenomAuteur--
+--Output from testAuteurNonValide--
+--Output from testNomAuteur--
+--Output from testToString--
+]]></system-err>
+</testsuite>

@@ -1,0 +1,3 @@
+--Output from testMauvaisTypeVide--
+--Output from testCreationTypeDocument--
+--Output from testToString--

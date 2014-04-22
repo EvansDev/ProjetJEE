@@ -1,93 +1,262 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="5" hostname="Romain-PC" id="0" name="ReservationControllerTests" package="biblioj" tests="8" time="2.813" timestamp="2014-04-17T14:39:24">
+  <testsuite errors="0" failures="0" hostname="Romain-PC" id="0" name="AuteurControllerTests" package="biblioj" tests="8" time="1.007" timestamp="2014-04-22T21:17:38">
       <properties />
 
-      <testcase classname="biblioj.ReservationControllerTests" name="testIndex" time="1.651" />
+      <testcase classname="biblioj.AuteurControllerTests" name="testList" time="0.497" />
 
-      <testcase classname="biblioj.ReservationControllerTests" name="testUpdate" time="0.755">
-          <failure message="Assertion failed: &#xa;&#xa;assert reservation.save() != null&#xa;       |           |      |&#xa;       0 - null    null   false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+      <testcase classname="biblioj.AuteurControllerTests" name="testShow" time="0.153" />
 
-assert reservation.save() != null
-       |           |      |
-       0 - null    null   false
+      <testcase classname="biblioj.AuteurControllerTests" name="testUpdate" time="0.102" />
 
-	at biblioj.ReservationControllerTests.testUpdate(ReservationControllerTests.groovy:100)
-</failure>
+      <testcase classname="biblioj.AuteurControllerTests" name="testCreate" time="0.038" />
 
-      </testcase>
+      <testcase classname="biblioj.AuteurControllerTests" name="testSave" time="0.039" />
 
-      <testcase classname="biblioj.ReservationControllerTests" name="testCreate" time="0.047" />
+      <testcase classname="biblioj.AuteurControllerTests" name="testDelete" time="0.041" />
 
-      <testcase classname="biblioj.ReservationControllerTests" name="testSave" time="0.084">
-          <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/reservation/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@34a41&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+      <testcase classname="biblioj.AuteurControllerTests" name="testEdit" time="0.037" />
 
-assert response.redirectedUrl == &apos;/reservation/show/1&apos;
-       |        |             |
-       |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@34a41
+      <testcase classname="biblioj.AuteurControllerTests" name="testIndex" time="0.036" />
 
-	at biblioj.ReservationControllerTests.testSave(ReservationControllerTests.groovy:48)
-</failure>
-
-      </testcase>
-
-      <testcase classname="biblioj.ReservationControllerTests" name="testList" time="0.07" />
-
-      <testcase classname="biblioj.ReservationControllerTests" name="testShow" time="0.064">
-          <failure message="Assertion failed: &#xa;&#xa;assert reservation.save() != null&#xa;       |           |      |&#xa;       0 - null    null   false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
-
-assert reservation.save() != null
-       |           |      |
-       0 - null    null   false
-
-	at biblioj.ReservationControllerTests.testShow(ReservationControllerTests.groovy:62)
-</failure>
-
-      </testcase>
-
-      <testcase classname="biblioj.ReservationControllerTests" name="testDelete" time="0.053">
-          <failure message="Assertion failed: &#xa;&#xa;assert reservation.save() != null&#xa;       |           |      |&#xa;       0 - null    null   false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
-
-assert reservation.save() != null
-       |           |      |
-       0 - null    null   false
-
-	at biblioj.ReservationControllerTests.testDelete(ReservationControllerTests.groovy:144)
-</failure>
-
-      </testcase>
-
-      <testcase classname="biblioj.ReservationControllerTests" name="testEdit" time="0.056">
-          <failure message="Assertion failed: &#xa;&#xa;assert reservation.save() != null&#xa;       |           |      |&#xa;       0 - null    null   false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
-
-assert reservation.save() != null
-       |           |      |
-       0 - null    null   false
-
-	at biblioj.ReservationControllerTests.testEdit(ReservationControllerTests.groovy:80)
-</failure>
-
-      </testcase>
-
-      <system-out><![CDATA[--Output from testIndex--
+      <system-out><![CDATA[--Output from testList--
+--Output from testShow--
 --Output from testUpdate--
 --Output from testCreate--
 --Output from testSave--
---Output from testList--
---Output from testShow--
 --Output from testDelete--
 --Output from testEdit--
+--Output from testIndex--
 ]]></system-out>
 
-      <system-err><![CDATA[--Output from testIndex--
+      <system-err><![CDATA[--Output from testList--
+--Output from testShow--
 --Output from testUpdate--
 --Output from testCreate--
 --Output from testSave--
---Output from testList--
---Output from testShow--
 --Output from testDelete--
 --Output from testEdit--
+--Output from testIndex--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Romain-PC" id="1" name="AuteurTests" package="biblioj" tests="5" time="0.205" timestamp="2014-04-22T21:17:39">
+      <properties />
+
+      <testcase classname="biblioj.AuteurTests" name="testCreationAuteur" time="0.055" />
+
+      <testcase classname="biblioj.AuteurTests" name="testPrenomAuteur" time="0.008" />
+
+      <testcase classname="biblioj.AuteurTests" name="testAuteurNonValide" time="0.01" />
+
+      <testcase classname="biblioj.AuteurTests" name="testNomAuteur" time="0.008" />
+
+      <testcase classname="biblioj.AuteurTests" name="testToString" time="0.008" />
+
+      <system-out><![CDATA[--Output from testCreationAuteur--
+--Output from testPrenomAuteur--
+--Output from testAuteurNonValide--
+--Output from testNomAuteur--
+--Output from testToString--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testCreationAuteur--
+--Output from testPrenomAuteur--
+--Output from testAuteurNonValide--
+--Output from testNomAuteur--
+--Output from testToString--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Romain-PC" id="2" name="LivreControllerTests" package="biblioj" tests="9" time="0.643" timestamp="2014-04-22T21:17:39">
+      <properties />
+
+      <testcase classname="biblioj.LivreControllerTests" name="testList" time="0.171" />
+
+      <testcase classname="biblioj.LivreControllerTests" name="testShow" time="0.083" />
+
+      <testcase classname="biblioj.LivreControllerTests" name="testUpdate" time="0.063" />
+
+      <testcase classname="biblioj.LivreControllerTests" name="testCreate" time="0.036" />
+
+      <testcase classname="biblioj.LivreControllerTests" name="testSave" time="0.04" />
+
+      <testcase classname="biblioj.LivreControllerTests" name="testDelete" time="0.06" />
+
+      <testcase classname="biblioj.LivreControllerTests" name="testEdit" time="0.039" />
+
+      <testcase classname="biblioj.LivreControllerTests" name="testIndex" time="0.039" />
+
+      <testcase classname="biblioj.LivreControllerTests" name="testDeletePanier" time="0.037" />
+
+      <system-out><![CDATA[--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
+--Output from testDeletePanier--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
+--Output from testDeletePanier--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Romain-PC" id="3" name="LivreTests" package="biblioj" tests="3" time="0.197" timestamp="2014-04-22T21:17:40">
+      <properties />
+
+      <testcase classname="biblioj.LivreTests" name="testMauvaiseCreation" time="0.077" />
+
+      <testcase classname="biblioj.LivreTests" name="testCreationValide" time="0.009" />
+
+      <testcase classname="biblioj.LivreTests" name="testToString" time="0.009" />
+
+      <system-out><![CDATA[--Output from testMauvaiseCreation--
+--Output from testCreationValide--
+--Output from testToString--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testMauvaiseCreation--
+--Output from testCreationValide--
+--Output from testToString--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Romain-PC" id="4" name="ReservationControllerTests" package="biblioj" tests="10" time="0.736" timestamp="2014-04-22T21:17:40">
+      <properties />
+
+      <testcase classname="biblioj.ReservationControllerTests" name="testList" time="0.195" />
+
+      <testcase classname="biblioj.ReservationControllerTests" name="testShow" time="0.098" />
+
+      <testcase classname="biblioj.ReservationControllerTests" name="testUpdate" time="0.05" />
+
+      <testcase classname="biblioj.ReservationControllerTests" name="testCreate" time="0.038" />
+
+      <testcase classname="biblioj.ReservationControllerTests" name="testSave" time="0.042" />
+
+      <testcase classname="biblioj.ReservationControllerTests" name="testDelete" time="0.069" />
+
+      <testcase classname="biblioj.ReservationControllerTests" name="testEdit" time="0.045" />
+
+      <testcase classname="biblioj.ReservationControllerTests" name="testIndex" time="0.036" />
+
+      <testcase classname="biblioj.ReservationControllerTests" name="testConfirmerReservation" time="0.04" />
+
+      <testcase classname="biblioj.ReservationControllerTests" name="testReservation" time="0.044" />
+
+      <system-out><![CDATA[--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
+--Output from testConfirmerReservation--
+--Output from testReservation--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
+--Output from testConfirmerReservation--
+--Output from testReservation--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Romain-PC" id="5" name="ReservationTests" package="biblioj" tests="3" time="0.171" timestamp="2014-04-22T21:17:41">
+      <properties />
+
+      <testcase classname="biblioj.ReservationTests" name="testMauvaiseCreation" time="0.056" />
+
+      <testcase classname="biblioj.ReservationTests" name="testToString" time="0.008" />
+
+      <testcase classname="biblioj.ReservationTests" name="testCreation" time="0.008" />
+
+      <system-out><![CDATA[--Output from testMauvaiseCreation--
+--Output from testToString--
+--Output from testCreation--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testMauvaiseCreation--
+--Output from testToString--
+--Output from testCreation--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Romain-PC" id="6" name="TypeDocumentControllerTests" package="biblioj" tests="8" time="0.598" timestamp="2014-04-22T21:17:41">
+      <properties />
+
+      <testcase classname="biblioj.TypeDocumentControllerTests" name="testList" time="0.194" />
+
+      <testcase classname="biblioj.TypeDocumentControllerTests" name="testShow" time="0.082" />
+
+      <testcase classname="biblioj.TypeDocumentControllerTests" name="testUpdate" time="0.044" />
+
+      <testcase classname="biblioj.TypeDocumentControllerTests" name="testCreate" time="0.034" />
+
+      <testcase classname="biblioj.TypeDocumentControllerTests" name="testSave" time="0.038" />
+
+      <testcase classname="biblioj.TypeDocumentControllerTests" name="testDelete" time="0.04" />
+
+      <testcase classname="biblioj.TypeDocumentControllerTests" name="testEdit" time="0.057" />
+
+      <testcase classname="biblioj.TypeDocumentControllerTests" name="testIndex" time="0.035" />
+
+      <system-out><![CDATA[--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Romain-PC" id="7" name="TypeDocumentTests" package="biblioj" tests="3" time="0.059" timestamp="2014-04-22T21:17:41">
+      <properties />
+
+      <testcase classname="biblioj.TypeDocumentTests" name="testMauvaisTypeVide" time="0.044" />
+
+      <testcase classname="biblioj.TypeDocumentTests" name="testCreationTypeDocument" time="0.006" />
+
+      <testcase classname="biblioj.TypeDocumentTests" name="testToString" time="0.006" />
+
+      <system-out><![CDATA[--Output from testMauvaisTypeVide--
+--Output from testCreationTypeDocument--
+--Output from testToString--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testMauvaisTypeVide--
+--Output from testCreationTypeDocument--
+--Output from testToString--
 ]]></system-err>
 
   </testsuite>

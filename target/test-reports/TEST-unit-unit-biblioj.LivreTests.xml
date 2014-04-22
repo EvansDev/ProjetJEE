@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Romain-PC" name="biblioj.LivreTests" tests="3" time="0.197" timestamp="2014-04-22T21:17:40">
+  <properties />
+  <testcase classname="biblioj.LivreTests" name="testMauvaiseCreation" time="0.077" />
+  <testcase classname="biblioj.LivreTests" name="testCreationValide" time="0.009" />
+  <testcase classname="biblioj.LivreTests" name="testToString" time="0.009" />
+  <system-out><![CDATA[--Output from testMauvaiseCreation--
+--Output from testCreationValide--
+--Output from testToString--
+]]></system-out>
+  <system-err><![CDATA[--Output from testMauvaiseCreation--
+--Output from testCreationValide--
+--Output from testToString--
+]]></system-err>
+</testsuite>

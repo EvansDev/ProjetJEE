@@ -15,12 +15,10 @@
      - All tests </h1>
 <p class="intro">
                         Executed
-                        8
+                        49
                         tests
                     
-                        with
-                        5 failures
-                        .
+                        without a single error or failure!
                     </p>
 </div>
 <div class="grid_2 omega">
@@ -43,56 +41,45 @@
 </nav>
 </div>
 <div class="clear"></div>
-<div class="testsuite failure">
+<div class="testsuite success">
 <div class="header">
-<h2>ReservationControllerTests</h2>
+<h2>AuteurControllerTests</h2>
 <h3>
                         Executed
                         8
                         tests
                     
-                        with
-                        5 failures
-                        .
+                        without a single error or failure!
                     </h3>
 </div>
-<div class="testcase clearfix success grid_8 alpha omega" data-name="testIndex">
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testList">
 <div class="grid_3 alpha">
 <p>
-<span class="icon success"></span><b class="testname message success">testIndex</b>
+<span class="icon success"></span><b class="testname message success">testList</b>
 </p>
-<p class="summary">Executed in 1.651 seconds.</p>
+<p class="summary">Executed in 0.497 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
 </div>
-<div class="testcase clearfix failure grid_8 alpha omega" data-name="testUpdate">
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testShow">
 <div class="grid_3 alpha">
 <p>
-<span class="icon failure"></span><b class="testname message failure">testUpdate</b>
+<span class="icon success"></span><b class="testname message success">testShow</b>
 </p>
-<p class="summary">Executed in 0.755 seconds.</p>
+<p class="summary">Executed in 0.153 seconds.</p>
 </div>
-<div class="grid_5 omega outputinfo">
-<div class="details">
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testUpdate">
+<div class="grid_3 alpha">
 <p>
-<b class="message">Assertion failed: 
-
-assert reservation.save() != null
-       |           |      |
-       0 - null    null   false
-</b>
+<span class="icon success"></span><b class="testname message success">testUpdate</b>
 </p>
-<pre>junit.framework.AssertionFailedError: Assertion failed: 
-
-assert reservation.save() != null
-       |           |      |
-       0 - null    null   false
-
-	at biblioj.ReservationControllerTests.testUpdate(ReservationControllerTests.groovy:100)
-</pre>
+<p class="summary">Executed in 0.102 seconds.</p>
 </div>
-</div>
+<div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
 </div>
 <div class="testcase clearfix success grid_8 alpha omega" data-name="testCreate">
@@ -100,162 +87,727 @@ assert reservation.save() != null
 <p>
 <span class="icon success"></span><b class="testname message success">testCreate</b>
 </p>
-<p class="summary">Executed in 0.047 seconds.</p>
+<p class="summary">Executed in 0.038 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
 </div>
-<div class="testcase clearfix failure grid_8 alpha omega" data-name="testSave">
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testSave">
 <div class="grid_3 alpha">
 <p>
-<span class="icon failure"></span><b class="testname message failure">testSave</b>
+<span class="icon success"></span><b class="testname message success">testSave</b>
 </p>
-<p class="summary">Executed in 0.084 seconds.</p>
+<p class="summary">Executed in 0.039 seconds.</p>
 </div>
-<div class="grid_5 omega outputinfo">
-<div class="details">
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testDelete">
+<div class="grid_3 alpha">
 <p>
-<b class="message">Assertion failed: 
-
-assert response.redirectedUrl == '/reservation/show/1'
-       |        |             |
-       |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@34a41
-</b>
+<span class="icon success"></span><b class="testname message success">testDelete</b>
 </p>
-<pre>junit.framework.AssertionFailedError: Assertion failed: 
-
-assert response.redirectedUrl == '/reservation/show/1'
-       |        |             |
-       |        null          false
-       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@34a41
-
-	at biblioj.ReservationControllerTests.testSave(ReservationControllerTests.groovy:48)
+<p class="summary">Executed in 0.041 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testEdit">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testEdit</b>
+</p>
+<p class="summary">Executed in 0.037 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testIndex">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testIndex</b>
+</p>
+<p class="summary">Executed in 0.036 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
 </pre>
 </div>
 </div>
 <div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>AuteurTests</h2>
+<h3>
+                        Executed
+                        5
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testCreationAuteur">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testCreationAuteur</b>
+</p>
+<p class="summary">Executed in 0.055 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testPrenomAuteur">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testPrenomAuteur</b>
+</p>
+<p class="summary">Executed in 0.008 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testAuteurNonValide">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testAuteurNonValide</b>
+</p>
+<p class="summary">Executed in 0.01 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testNomAuteur">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testNomAuteur</b>
+</p>
+<p class="summary">Executed in 0.008 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testToString">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testToString</b>
+</p>
+<p class="summary">Executed in 0.008 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testCreationAuteur--
+--Output from testPrenomAuteur--
+--Output from testAuteurNonValide--
+--Output from testNomAuteur--
+--Output from testToString--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testCreationAuteur--
+--Output from testPrenomAuteur--
+--Output from testAuteurNonValide--
+--Output from testNomAuteur--
+--Output from testToString--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>LivreControllerTests</h2>
+<h3>
+                        Executed
+                        9
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
 </div>
 <div class="testcase clearfix success grid_8 alpha omega" data-name="testList">
 <div class="grid_3 alpha">
 <p>
 <span class="icon success"></span><b class="testname message success">testList</b>
 </p>
-<p class="summary">Executed in 0.07 seconds.</p>
+<p class="summary">Executed in 0.171 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
 </div>
-<div class="testcase clearfix failure grid_8 alpha omega" data-name="testShow">
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testShow">
 <div class="grid_3 alpha">
 <p>
-<span class="icon failure"></span><b class="testname message failure">testShow</b>
+<span class="icon success"></span><b class="testname message success">testShow</b>
 </p>
-<p class="summary">Executed in 0.064 seconds.</p>
+<p class="summary">Executed in 0.083 seconds.</p>
 </div>
-<div class="grid_5 omega outputinfo">
-<div class="details">
-<p>
-<b class="message">Assertion failed: 
-
-assert reservation.save() != null
-       |           |      |
-       0 - null    null   false
-</b>
-</p>
-<pre>junit.framework.AssertionFailedError: Assertion failed: 
-
-assert reservation.save() != null
-       |           |      |
-       0 - null    null   false
-
-	at biblioj.ReservationControllerTests.testShow(ReservationControllerTests.groovy:62)
-</pre>
-</div>
-</div>
+<div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
 </div>
-<div class="testcase clearfix failure grid_8 alpha omega" data-name="testDelete">
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testUpdate">
 <div class="grid_3 alpha">
 <p>
-<span class="icon failure"></span><b class="testname message failure">testDelete</b>
+<span class="icon success"></span><b class="testname message success">testUpdate</b>
 </p>
-<p class="summary">Executed in 0.053 seconds.</p>
+<p class="summary">Executed in 0.063 seconds.</p>
 </div>
-<div class="grid_5 omega outputinfo">
-<div class="details">
-<p>
-<b class="message">Assertion failed: 
-
-assert reservation.save() != null
-       |           |      |
-       0 - null    null   false
-</b>
-</p>
-<pre>junit.framework.AssertionFailedError: Assertion failed: 
-
-assert reservation.save() != null
-       |           |      |
-       0 - null    null   false
-
-	at biblioj.ReservationControllerTests.testDelete(ReservationControllerTests.groovy:144)
-</pre>
-</div>
-</div>
+<div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
 </div>
-<div class="testcase clearfix failure grid_8 alpha omega" data-name="testEdit">
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testCreate">
 <div class="grid_3 alpha">
 <p>
-<span class="icon failure"></span><b class="testname message failure">testEdit</b>
+<span class="icon success"></span><b class="testname message success">testCreate</b>
 </p>
-<p class="summary">Executed in 0.056 seconds.</p>
+<p class="summary">Executed in 0.036 seconds.</p>
 </div>
-<div class="grid_5 omega outputinfo">
-<div class="details">
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testSave">
+<div class="grid_3 alpha">
 <p>
-<b class="message">Assertion failed: 
-
-assert reservation.save() != null
-       |           |      |
-       0 - null    null   false
-</b>
+<span class="icon success"></span><b class="testname message success">testSave</b>
 </p>
-<pre>junit.framework.AssertionFailedError: Assertion failed: 
-
-assert reservation.save() != null
-       |           |      |
-       0 - null    null   false
-
-	at biblioj.ReservationControllerTests.testEdit(ReservationControllerTests.groovy:80)
-</pre>
+<p class="summary">Executed in 0.04 seconds.</p>
 </div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
 </div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testDelete">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testDelete</b>
+</p>
+<p class="summary">Executed in 0.06 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testEdit">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testEdit</b>
+</p>
+<p class="summary">Executed in 0.039 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testIndex">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testIndex</b>
+</p>
+<p class="summary">Executed in 0.039 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testDeletePanier">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testDeletePanier</b>
+</p>
+<p class="summary">Executed in 0.037 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
 </div>
 <div class="clearfix output footer">
 <div class="sysout">
 <h2>Standard output</h2>
-<pre class="stdout">--Output from testIndex--
+<pre class="stdout">--Output from testList--
+--Output from testShow--
 --Output from testUpdate--
 --Output from testCreate--
 --Output from testSave--
---Output from testList--
---Output from testShow--
 --Output from testDelete--
 --Output from testEdit--
+--Output from testIndex--
+--Output from testDeletePanier--
 </pre>
 </div>
 <div class="syserr">
 <h2>System error</h2>
-<pre class="syserr">--Output from testIndex--
+<pre class="syserr">--Output from testList--
+--Output from testShow--
 --Output from testUpdate--
 --Output from testCreate--
 --Output from testSave--
---Output from testList--
---Output from testShow--
 --Output from testDelete--
 --Output from testEdit--
+--Output from testIndex--
+--Output from testDeletePanier--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>LivreTests</h2>
+<h3>
+                        Executed
+                        3
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testMauvaiseCreation">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testMauvaiseCreation</b>
+</p>
+<p class="summary">Executed in 0.077 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testCreationValide">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testCreationValide</b>
+</p>
+<p class="summary">Executed in 0.009 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testToString">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testToString</b>
+</p>
+<p class="summary">Executed in 0.009 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testMauvaiseCreation--
+--Output from testCreationValide--
+--Output from testToString--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testMauvaiseCreation--
+--Output from testCreationValide--
+--Output from testToString--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>ReservationControllerTests</h2>
+<h3>
+                        Executed
+                        10
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testList">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testList</b>
+</p>
+<p class="summary">Executed in 0.195 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testShow">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testShow</b>
+</p>
+<p class="summary">Executed in 0.098 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testUpdate">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testUpdate</b>
+</p>
+<p class="summary">Executed in 0.05 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testCreate">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testCreate</b>
+</p>
+<p class="summary">Executed in 0.038 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testSave">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testSave</b>
+</p>
+<p class="summary">Executed in 0.042 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testDelete">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testDelete</b>
+</p>
+<p class="summary">Executed in 0.069 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testEdit">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testEdit</b>
+</p>
+<p class="summary">Executed in 0.045 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testIndex">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testIndex</b>
+</p>
+<p class="summary">Executed in 0.036 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testConfirmerReservation">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testConfirmerReservation</b>
+</p>
+<p class="summary">Executed in 0.04 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testReservation">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testReservation</b>
+</p>
+<p class="summary">Executed in 0.044 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
+--Output from testConfirmerReservation--
+--Output from testReservation--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
+--Output from testConfirmerReservation--
+--Output from testReservation--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>ReservationTests</h2>
+<h3>
+                        Executed
+                        3
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testMauvaiseCreation">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testMauvaiseCreation</b>
+</p>
+<p class="summary">Executed in 0.056 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testToString">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testToString</b>
+</p>
+<p class="summary">Executed in 0.008 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testCreation">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testCreation</b>
+</p>
+<p class="summary">Executed in 0.008 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testMauvaiseCreation--
+--Output from testToString--
+--Output from testCreation--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testMauvaiseCreation--
+--Output from testToString--
+--Output from testCreation--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>TypeDocumentControllerTests</h2>
+<h3>
+                        Executed
+                        8
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testList">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testList</b>
+</p>
+<p class="summary">Executed in 0.194 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testShow">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testShow</b>
+</p>
+<p class="summary">Executed in 0.082 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testUpdate">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testUpdate</b>
+</p>
+<p class="summary">Executed in 0.044 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testCreate">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testCreate</b>
+</p>
+<p class="summary">Executed in 0.034 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testSave">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testSave</b>
+</p>
+<p class="summary">Executed in 0.038 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testDelete">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testDelete</b>
+</p>
+<p class="summary">Executed in 0.04 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testEdit">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testEdit</b>
+</p>
+<p class="summary">Executed in 0.057 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testIndex">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testIndex</b>
+</p>
+<p class="summary">Executed in 0.035 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>TypeDocumentTests</h2>
+<h3>
+                        Executed
+                        3
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testMauvaisTypeVide">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testMauvaisTypeVide</b>
+</p>
+<p class="summary">Executed in 0.044 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testCreationTypeDocument">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testCreationTypeDocument</b>
+</p>
+<p class="summary">Executed in 0.006 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testToString">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testToString</b>
+</p>
+<p class="summary">Executed in 0.006 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testMauvaisTypeVide--
+--Output from testCreationTypeDocument--
+--Output from testToString--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testMauvaisTypeVide--
+--Output from testCreationTypeDocument--
+--Output from testToString--
 </pre>
 </div>
 </div>

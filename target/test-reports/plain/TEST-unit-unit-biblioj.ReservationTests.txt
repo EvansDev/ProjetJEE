@@ -1,0 +1,16 @@
+Testsuite: biblioj.ReservationTests
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0,171 sec
+------------- Standard Output ---------------
+--Output from testMauvaiseCreation--
+--Output from testToString--
+--Output from testCreation--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testMauvaiseCreation--
+--Output from testToString--
+--Output from testCreation--
+------------- ---------------- ---------------
+
+Testcase: testMauvaiseCreation took 0,056 sec
+Testcase: testToString took 0,008 sec
+Testcase: testCreation took 0,008 sec

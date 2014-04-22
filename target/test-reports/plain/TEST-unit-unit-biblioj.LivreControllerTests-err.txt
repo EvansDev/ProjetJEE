@@ -6,5 +6,4 @@
 --Output from testDelete--
 --Output from testEdit--
 --Output from testIndex--
---Output from testConfirmerReservation--
---Output from testReservation--
+--Output from testDeletePanier--

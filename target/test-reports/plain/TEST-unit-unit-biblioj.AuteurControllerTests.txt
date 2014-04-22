@@ -1,5 +1,5 @@
-Testsuite: biblioj.ReservationControllerTests
-Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0,736 sec
+Testsuite: biblioj.AuteurControllerTests
+Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 1,007 sec
 ------------- Standard Output ---------------
 --Output from testList--
 --Output from testShow--
@@ -9,8 +9,6 @@ Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0,736 sec
 --Output from testDelete--
 --Output from testEdit--
 --Output from testIndex--
---Output from testConfirmerReservation--
---Output from testReservation--
 ------------- ---------------- ---------------
 ------------- Standard Error -----------------
 --Output from testList--
@@ -21,17 +19,13 @@ Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0,736 sec
 --Output from testDelete--
 --Output from testEdit--
 --Output from testIndex--
---Output from testConfirmerReservation--
---Output from testReservation--
 ------------- ---------------- ---------------
 
-Testcase: testList took 0,195 sec
-Testcase: testShow took 0,098 sec
-Testcase: testUpdate took 0,05 sec
+Testcase: testList took 0,497 sec
+Testcase: testShow took 0,153 sec
+Testcase: testUpdate took 0,102 sec
 Testcase: testCreate took 0,038 sec
-Testcase: testSave took 0,043 sec
-Testcase: testDelete took 0,069 sec
-Testcase: testEdit took 0,045 sec
+Testcase: testSave took 0,039 sec
+Testcase: testDelete took 0,041 sec
+Testcase: testEdit took 0,037 sec
 Testcase: testIndex took 0,036 sec
-Testcase: testConfirmerReservation took 0,04 sec
-Testcase: testReservation took 0,044 sec

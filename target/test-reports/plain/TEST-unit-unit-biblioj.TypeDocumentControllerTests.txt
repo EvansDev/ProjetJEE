@@ -1,0 +1,31 @@
+Testsuite: biblioj.TypeDocumentControllerTests
+Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 0,598 sec
+------------- Standard Output ---------------
+--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
+------------- ---------------- ---------------
+
+Testcase: testList took 0,194 sec
+Testcase: testShow took 0,082 sec
+Testcase: testUpdate took 0,044 sec
+Testcase: testCreate took 0,034 sec
+Testcase: testSave took 0,038 sec
+Testcase: testDelete took 0,04 sec
+Testcase: testEdit took 0,057 sec
+Testcase: testIndex took 0,035 sec

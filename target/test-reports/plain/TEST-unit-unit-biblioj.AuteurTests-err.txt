@@ -1,0 +1,5 @@
+--Output from testCreationAuteur--
+--Output from testPrenomAuteur--
+--Output from testAuteurNonValide--
+--Output from testNomAuteur--
+--Output from testToString--

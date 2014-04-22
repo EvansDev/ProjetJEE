@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Romain-PC" name="biblioj.LivreControllerTests" tests="9" time="0.643" timestamp="2014-04-22T21:17:39">
+  <properties />
+  <testcase classname="biblioj.LivreControllerTests" name="testList" time="0.171" />
+  <testcase classname="biblioj.LivreControllerTests" name="testShow" time="0.083" />
+  <testcase classname="biblioj.LivreControllerTests" name="testUpdate" time="0.063" />
+  <testcase classname="biblioj.LivreControllerTests" name="testCreate" time="0.036" />
+  <testcase classname="biblioj.LivreControllerTests" name="testSave" time="0.04" />
+  <testcase classname="biblioj.LivreControllerTests" name="testDelete" time="0.06" />
+  <testcase classname="biblioj.LivreControllerTests" name="testEdit" time="0.039" />
+  <testcase classname="biblioj.LivreControllerTests" name="testIndex" time="0.039" />
+  <testcase classname="biblioj.LivreControllerTests" name="testDeletePanier" time="0.037" />
+  <system-out><![CDATA[--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
+--Output from testDeletePanier--
+]]></system-out>
+  <system-err><![CDATA[--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
+--Output from testDeletePanier--
+]]></system-err>
+</testsuite>

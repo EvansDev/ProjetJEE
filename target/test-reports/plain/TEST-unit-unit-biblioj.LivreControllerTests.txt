@@ -1,0 +1,34 @@
+Testsuite: biblioj.LivreControllerTests
+Tests run: 9, Failures: 0, Errors: 0, Time elapsed: 0,643 sec
+------------- Standard Output ---------------
+--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
+--Output from testDeletePanier--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testList--
+--Output from testShow--
+--Output from testUpdate--
+--Output from testCreate--
+--Output from testSave--
+--Output from testDelete--
+--Output from testEdit--
+--Output from testIndex--
+--Output from testDeletePanier--
+------------- ---------------- ---------------
+
+Testcase: testList took 0,171 sec
+Testcase: testShow took 0,083 sec
+Testcase: testUpdate took 0,063 sec
+Testcase: testCreate took 0,036 sec
+Testcase: testSave took 0,04 sec
+Testcase: testDelete took 0,06 sec
+Testcase: testEdit took 0,039 sec
+Testcase: testIndex took 0,04 sec
+Testcase: testDeletePanier took 0,037 sec

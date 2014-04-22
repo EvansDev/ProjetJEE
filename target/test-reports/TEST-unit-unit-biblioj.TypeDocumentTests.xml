@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Romain-PC" name="biblioj.TypeDocumentTests" tests="3" time="0.059" timestamp="2014-04-22T21:17:41">
+  <properties />
+  <testcase classname="biblioj.TypeDocumentTests" name="testMauvaisTypeVide" time="0.044" />
+  <testcase classname="biblioj.TypeDocumentTests" name="testCreationTypeDocument" time="0.006" />
+  <testcase classname="biblioj.TypeDocumentTests" name="testToString" time="0.006" />
+  <system-out><![CDATA[--Output from testMauvaisTypeVide--
+--Output from testCreationTypeDocument--
+--Output from testToString--
+]]></system-out>
+  <system-err><![CDATA[--Output from testMauvaisTypeVide--
+--Output from testCreationTypeDocument--
+--Output from testToString--
+]]></system-err>
+</testsuite>

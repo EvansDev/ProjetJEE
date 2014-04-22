@@ -1,0 +1,22 @@
+Testsuite: biblioj.AuteurTests
+Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0,205 sec
+------------- Standard Output ---------------
+--Output from testCreationAuteur--
+--Output from testPrenomAuteur--
+--Output from testAuteurNonValide--
+--Output from testNomAuteur--
+--Output from testToString--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testCreationAuteur--
+--Output from testPrenomAuteur--
+--Output from testAuteurNonValide--
+--Output from testNomAuteur--
+--Output from testToString--
+------------- ---------------- ---------------
+
+Testcase: testCreationAuteur took 0,055 sec
+Testcase: testPrenomAuteur took 0,008 sec
+Testcase: testAuteurNonValide took 0,01 sec
+Testcase: testNomAuteur took 0,008 sec
+Testcase: testToString took 0,008 sec
