@@ -45,4 +45,9 @@ class LivreTests {
 		assert livre2 != null
 		assert livre2.save() == null
 	}
+	
+	@Test
+	void testToString () {
+		assertEquals( livre1.toString(), "Rien ne s'oppose à la nuit : roman")
+	}
 }
