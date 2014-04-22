@@ -36,4 +36,9 @@ class TypeDocumentTests {
 		assert mauvaisType != null
 		assert mauvaisType.save() == null
 	}
+	
+	@Test
+	void testToString(){
+		assertEquals(nouveaute.toString(), "Nouveauté")
+	}
 }
