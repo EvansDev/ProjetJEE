@@ -46,4 +46,9 @@ class AuteurTests {
 		assert auteur2.save() == null
 	}
 	
+	@Test
+	void testToString(){
+		assertEquals(auteur1.toString(), "Pierre Jacques")
+	}
+	
 }
